@@ -1,0 +1,37 @@
+.category {
+    flex-direction: column;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    z-index: 1000;
+    background-color: white;
+    margin-left: 1rem;
+    padding: 1rem;
+    height: 20vh;
+    display: none !important;
+}
+
+.category h5 {
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.category h5:hover {
+    text-decoration: underline;
+}
+
+.main_cat {
+    cursor: pointer;
+}
+
+.main_cat:hover {
+    color: white !important;
+}
+
+.main_cat:hover~.category {
+    display: block !important;
+}
+
+.category:hover {
+    display: block !important;
+}
